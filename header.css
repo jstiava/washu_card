@@ -1,0 +1,20 @@
+header {
+    height: 100vh;
+    background-color: var(--theme-pri);
+}
+header .col {
+    flex-direction: column;
+}
+
+    header section {
+        width: 100%; height: fit-content;
+    }
+    header .row {
+        justify-content: space-between; align-items: center;
+        padding: var(--space-vert-tall) var(--space-hrzt-lrg);
+        background-color: var(--theme-dark);
+    }
+
+        #header_statusBar img {
+            height: var(--size-smallHeight); width: auto;
+        }

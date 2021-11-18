@@ -1,0 +1,58 @@
+/*  ||  Universal Variables */
+
+    :root {
+        /*Fonts */
+            --font-serif: 'Libre Baskerville', 'sans-serif';
+            --font-sans: 'Source Sans Pro', 'sans';
+            --font-icon: 'Material Icons';
+
+        /* Colors */
+            --color-white: var(255, 255, 255);
+
+            /* Official WashU Green */
+            --color-greenLight: rgb(204, 255, 246);
+            --color-greenAccent:rgb(26, 255, 217);
+            --color-greenSec: rgb(0, 153, 128);
+            --color-green: rgb(0, 115, 96);
+            --color-greenDark: rgb(0, 51, 43);
+
+
+            /* Current Theming */
+            --theme-primary: var(--color-green);
+            --theme-accent: var(--color-greenAccent);
+            --theme-dark: var(--color-greenDark);
+
+        /* Spacing */
+            --space-vert-tall: 5px;
+            --space-vert-grande: 30px;
+            --space-vert-venti: 70px;
+
+            --space-hrzt-sml: 70px;
+            --space-hrzt-med: 70px;
+            --space-hrzt-lrg: 70px;
+
+        /* Size */
+            --size-smallHeight: 55px;
+            --size-medianHeight: 55px;
+    }
+
+
+/*  ||  Universal Styles */
+
+    * {
+        box-sizing: border-box;
+    }
+    body, header, #content, footer {
+        display: flex;
+        width: 100%;
+        padding: 0; margin: 0;
+        flex-direction: column;
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+    .row {
+        display: flex;
+        width: 100%;
+    }
