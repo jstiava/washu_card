@@ -11,10 +11,51 @@ header .col {
     }
     header .row {
         justify-content: space-between; align-items: center;
-        padding: var(--space-vert-tall) var(--space-hrzt-lrg);
-        background-color: var(--theme-dark);
+        padding: 0;
+        background-color: var(--theme-primary);
     }
-
-        #header_statusBar img {
+        #header_statusBar > * > img {
             height: var(--size-smallHeight); width: auto;
+            margin-left: 3%;
+        }
+        :is(a.button, a.icon) {
+            display: flex; justify-content: center; align-items: center;
+            height: 60px; width: fit-content;
+            padding: 0 25px;
+
+            font-family: var(--font-sans);
+            letter-spacing: 0.03em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-size: var(--fontSize-1);
+            transition: 0.2s;
+        }
+        a.icon {
+            display: flex; justify-content: center; align-items: center;
+            font-family: var(--font-icon) !important;
+            width: 60px !important;
+            background-color: var(--color-greenAccent) !important;
+            color: var(--color-greenDark);
+        }
+        a.icon img {
+            width: 40px; height: auto;
+        }
+        a.button:hover {
+            background-color: var(--color-greenDark);
+            transition: 0.2s;
+        }
+        #header_statusBar a.icon:hover {
+            background-color: #ffffff !important;
+            transition: 0.2s;
+        }
+
+        #masthead {
+            margin-left: calc(3% + 12px);
+        }
+        #navRow {
+            margin-right: calc(3% + 5px);
+        }
+        #navRow .button {
+            font-size: var(--fontSize-2);
         }
